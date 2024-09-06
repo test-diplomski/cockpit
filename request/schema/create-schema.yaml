@@ -1,0 +1,17 @@
+name: schema
+organization: c12s
+namespace: default
+type: object
+properties:
+  db_config:
+    type: object
+    properties:
+      address:
+        type: string
+      port:
+        type: string
+    required:
+      - address
+      - port
+required:
+  - db_config

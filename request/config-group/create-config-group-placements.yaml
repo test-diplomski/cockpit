@@ -1,0 +1,12 @@
+config:
+  name: app_config
+  organization: c12s
+  namespace: default
+  version: v1.0.1
+namespace: dev
+strategy:
+  name: default
+  query:
+    - labelKey: memory-totalGB
+      shouldBe: ">"
+      value: "2"
